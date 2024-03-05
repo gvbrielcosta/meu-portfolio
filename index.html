@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <h1>Minha Página Web</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#secao1">Seção 1</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#secao2">Seção 2</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#secao3">Seção 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="secao1" class="container py-4">
+        <h2>Seção 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tortor a mi hendrerit dignissim. In non neque vel magna commodo sollicitudin. Sed vehicula est quis magna ultricies, eget scelerisque libero tristique.</p>
+    </div>
+
+    <div id="secao2" class="container py-4">
+        <h2>Seção 2</h2>
+        <p>Nulla facilisi. Mauris at ipsum auctor, feugiat ipsum in, tincidunt lectus. Praesent malesuada, turpis vitae fermentum vestibulum, augue arcu tincidunt dolor, sit amet tincidunt justo neque a nulla. Sed vitae lacinia velit.</p>
+    </div>
+
+    <div id="secao3" class="container py-4">
+        <h2>Seção 3</h2>
+        <p>Phasellus tincidunt justo sed mauris congue, a facilisis magna tincidunt. Proin sit amet tortor congue, dignissim metus vitae, lobortis ipsum. Ut viverra mauris ac purus feugiat aliquet. Proin semper, risus et elementum vestibulum, odio odio tincidunt lorem, ac fringilla elit odio eu leo.</p>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; <span id="currentYear"></span> Minha Página Web
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
